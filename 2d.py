@@ -1,8 +1,14 @@
 import numpy as np
 import matplotlib.pyplot as plt
 import os
+import sys
 
-PATH = "/Users/shafu/contract-vis/examples/"
+if len(sys.argv) != 2:
+    print("Usage: python run.py [path to dir]")
+    exit(1)
+else:
+    PATH = sys.argv[1]
+
 files = os.listdir(PATH)
 
 bitmaps = []
