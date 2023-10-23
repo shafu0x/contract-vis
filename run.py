@@ -2,12 +2,13 @@ import numpy as np
 import matplotlib.pyplot as plt
 import os
 
-files = os.listdir("/Users/shafu/contract-vis/examples")
+PATH = "/Users/shafu/contract-vis/examples"
+files = os.listdir(PATH)
 
 bitmaps = []
 
 for file in files:
-    path = "/Users/shafu/contract-vis/examples/" + file
+    path = PATH + file
 
     with open(path, "r") as f:
         bytecode = f.read()
