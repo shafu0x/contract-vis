@@ -1,3 +1,5 @@
+import numpy as np
+
 PATH = "/Users/shafu/contract-vis/examples/dnft.bytecode"
 
 with open(PATH, "r") as f:
@@ -12,7 +14,13 @@ bytecode_pairs = []
 for i in range(len(bytecode_list)-1):
     bytecode_pairs.append((int(bytecode_list[i], 16), int(bytecode_list[i+1], 16)))
 
-print("Bytecode: ", bytecode)
-print("Bytecode list: ", bytecode_list)
-print("Bytecode pairs: ", bytecode_pairs)
+bitmap = np.zeros((256, 256), dtype=np.uint8)
+for pair in bytecode_pairs:
+    bitmap[pair[0], pair[1]] = 255
 
+print(bitmap)
+
+# visualize the bitmap
+import matplotlib.pyplot as plt
+plt.imshow(bitmap, cmap='gray')
+plt.show()
