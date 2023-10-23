@@ -6,6 +6,7 @@ By plotting the raw bytecode as bytes one can generate some interesting
 visualizations of a smart contract. Like this:
 
 ![image](https://github.com/shafu0x/contract-vis/blob/main/output/contract-vis.2d.png)
+![image](https://github.com/shafu0x/contract-vis/blob/main/output/contract-vis.3d.png)
 
 Contracts, as expected, look very similar to x86 or arm64 executables.
 
@@ -29,4 +30,7 @@ My explanation in a bit more detail can be found [here](https://twitter.com/shaf
 
 ```bash
 python 2d.py [path to dir]
+python 3d.py [path to file]
 ```
+
+see `run.sh` for example
