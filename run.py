@@ -1,7 +1,7 @@
 import numpy as np
-
-# get all files in directory
+import matplotlib.pyplot as plt
 import os
+
 files = os.listdir("/Users/shafu/contract-vis/examples")
 
 bitmaps = []
@@ -27,8 +27,6 @@ for file in files:
 
     bitmaps.append(bitmap)
 
-# visualize the bitmaps in one plot
-import matplotlib.pyplot as plt
 fig, axes = plt.subplots(2, 3)
 
 bitmaps = [bitmaps[i] for i in range(6)]
