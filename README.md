@@ -5,7 +5,7 @@ Visualize smart contracts.
 By plotting the raw bytecode as bytes one can generate some interesting 
 visualizations of a smart contract. Like this:
 
-![image](http://github.com/shafu0x/contract-vis/output/contract-vis.png)
+![image](https://github.com/shafu0x/contract-vis/blob/main/output/contract-vis.png)
 
 Contracts, as expected, look very similar to x86 or arm64 executables.
 
